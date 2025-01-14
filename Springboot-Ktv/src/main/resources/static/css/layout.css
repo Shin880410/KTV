@@ -1,0 +1,80 @@
+@charset "UTF-8"; /* 指定 CSS 文件使用 UTF-8 字符編碼 */
+
+body {
+    background-color: #f2f2f2; /* 設置背景顏色為淺灰色 */
+    font-family: Arial, sans-serif; /* 設置字體為 Arial 或無襯線字體 */
+    margin: 0; /* 移除邊距 */
+    padding: 0; /* 移除內填充 */
+}
+
+.container {
+    display: flex; /* 使用彈性盒模型 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素在交叉軸上居中對齊 */
+    justify-content: center; /* 子元素在主軸上居中對齊 */
+    width: min(100%, 1028px); /* 容器的最大寬度為 1028px，若視窗寬度小於此值，則寬度為 100% */
+    min-height: 10vh; /* 容器的最小高度為視窗高度的 10% */
+    background-color: transparent; /* 背景顏色透明 */
+    padding: 0; /* 移除內填充 */
+    border: none; /* 移除邊框 */
+}
+
+h1 {
+    text-align: center; /* 標題文字居中對齊 */
+    color: #333; /* 標題文字顏色為深灰色 */
+}
+
+label {
+    display: block; /* 標籤以塊狀元素顯示，佔滿一行 */
+    margin-bottom: 10px; /* 標籤下方添加外邊距 */
+    font-weight: bold; /* 標籤文字加粗 */
+}
+
+input[type="text"], select {
+    width: 100%; /* 輸入框和下拉菜單佔滿父元素的寬度 */
+    padding: 10px; /* 添加內填充 */
+    border: 1px solid #ccc; /* 設置邊框為 1px 實線，顏色為淺灰色 */
+    border-radius: 4px; /* 邊框圓角效果 */
+    box-sizing: border-box; /* 盒模型的寬度和高度包含內填充和邊框 */
+}
+
+button {
+    width: auto; /* 按鈕寬度根據內容自動調整 */
+    padding: 10px; /* 添加內填充 */
+    background-color: #4CAF50; /* 按鈕背景顏色為深綠色 */
+    color: #fff; /* 按鈕文字顏色為白色 */
+    border: none; /* 移除邊框 */
+    border-radius: 4px; /* 邊框圓角效果 */
+    cursor: pointer; /* 鼠標懸停時顯示指針形狀 */
+    transition: background-color 0.3s; /* 背景顏色變化時的過渡效果 */
+    margin: 10px 0; /* 添加上下外邊距 */
+}
+
+ul {
+    display: flex; /* 使用彈性盒模型 */
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素在交叉軸上居中對齊 */
+    padding: 0; /* 移除內填充 */
+    list-style-type: none; /* 移除列表項目前的標記 */
+}
+
+li {
+    margin-bottom: 10px; /* 列表項目之間添加下方外邊距 */
+    width: auto; /* 列表項目寬度根據內容自動調整 */
+}
+
+button:hover {
+    background-color: #45a049; /* 按鈕懸停時背景顏色變為稍淺的綠色 */
+}
+
+.back-btn {
+    margin-top: 20px; /* 「返回」按鈕上方添加外邊距 */
+}
+
+.back-btn button {
+    background-color: #337ab7; /* 「返回」按鈕背景顏色為藍色 */
+}
+
+.back-btn button:hover {
+    background-color: #23527c; /* 「返回」按鈕懸停時背景顏色變為深藍色 */
+}
